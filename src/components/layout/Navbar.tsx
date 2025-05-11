@@ -59,7 +59,7 @@ const Navbar: React.FC = () => {
           }}
         >
           <Code className={`${theme === 'dark' ? 'text-blue-400' : 'text-blue-600'}`} size={24} />
-          <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Alex Morgan</span>
+          <span className={`${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Sainaev Bakyt</span>
         </a>
 
         {/* Desktop Navigation */}

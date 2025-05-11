@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github as GitHub, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Github as GitHub, Linkedin, Mail } from 'lucide-react';
+import { PiTelegramLogoDuotone } from "react-icons/pi";
 import { useTheme } from '../../context/ThemeContext';
 
 const Footer: React.FC = () => {
@@ -7,10 +8,10 @@ const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <GitHub size={20} />, url: 'https://github.com', label: 'GitHub' },
+    { icon: <GitHub size={20} />, url: 'https://github.com/BAKYTq1', label: 'GitHub' },
     { icon: <Linkedin size={20} />, url: 'https://linkedin.com', label: 'LinkedIn' },
-    { icon: <Twitter size={20} />, url: 'https://twitter.com', label: 'Twitter' },
-    { icon: <Mail size={20} />, url: 'mailto:alex@example.com', label: 'Email' }
+    { icon: <PiTelegramLogoDuotone   size={20} />, url: 'https://t.me/sainaev', label: 'Telegram' },
+    { icon: <Mail size={20} />, url: 'mailto:bsainaev@gmail.com', label: 'Email' }
   ];
 
   return (
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col gap-2">
-            <h3 className="text-xl font-bold">Alex Morgan</h3>
+            <h3 className="text-xl font-bold">Bakyt Sainaev</h3>
             <p className={`text-sm ${theme === 'dark' ? 'text-gray-400' : 'text-gray-600'}`}>
               Frontend Developer crafting exceptional web experiences
             </p>
